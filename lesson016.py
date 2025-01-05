@@ -1,7 +1,9 @@
 print("Welcome to the Java Cafe\n")
 
 price = 0
-sizeCheckout = "None"
+sizeCheckoutCoffee = "None"
+sizeCheckoutCookies = "None"
+sizeCheckoutCake = "None"
 
 coffee = input("Would you like coffee? ")
 if coffee.lower() == "yes":
@@ -11,13 +13,13 @@ if coffee.lower() == "yes":
         print("You can't get coffee :(")
     else:
         if size_choice == 1:
-            sizeCheckout = "Small"
+            sizeCheckoutCoffee = "Small"
             price += 3
         elif size_choice == 2:
-            sizeCheckout = "Medium"
+            sizeCheckoutCoffee = "Medium"
             price += 5
         elif size_choice == 3:
-            sizeCheckout = "Large"
+            sizeCheckoutCoffee = "Large"
             price += 7
 
 cookies = input("Would you like cookies? ")
@@ -56,5 +58,7 @@ if cake.lower() == "yes":
 
 print('---------------------------------')
 print("Order summary: ")
-
-
+print(f"Coffee size: {sizeCheckoutCoffee}")
+print(f"Cookie size: {sizeCheckoutCookies}")
+print(f"Cake size: {sizeCheckoutCake}")
+print("Total: ${:.2f}".format(price))
