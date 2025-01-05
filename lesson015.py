@@ -21,4 +21,28 @@ if (1 + 1) == 2 and (3 / 2) == 1:
     print(True)
 else:
     print(False)
+print()
+
+print("-----Problem 1-----")
+val = int(input("Enter a number: "))
+if val < 10 or val > 20:
+    print(f"{val} is valid.")
+else:
+    print(f"{val} is invalid.")
+print()
+
+print("-----Problem 2-----")
+val = int(input("Enter a number: "))
+if val >= 10 and val <= 20:
+    print(f"{val} is valid.")
+else:
+    print(f"{val} is invalid.")
+print()
+
+print("-----Problem 2-----")
+if 10 <= val <= 20:
+    print(f"{val} is valid.")
+else:
+    print(f"{val} is invalid.")
+
 
